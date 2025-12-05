@@ -1,0 +1,89 @@
+.mainContainer {
+    background-color: rgb(var(--color-cream));
+    border: 2px solid rgb(var(--color-green-900));
+    border-radius: 2rem;
+    box-shadow: 8px 8px 0 #03594D;
+    padding: 3rem 2rem;
+    max-width: 80rem;
+    /* max-w-6xl equivalent */
+    margin: 100px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mainContainer {
+        padding: 4rem;
+    }
+}
+
+.card {
+    border: 2px solid rgb(var(--color-green-900));
+    border-radius: 1rem;
+    box-shadow: 4px 4px 0 #03594D;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0 #03594D;
+}
+
+.span2 {
+    grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+    .span2 {
+        grid-column: span 2;
+    }
+}
+
+.pink {
+    background-color: rgb(var(--color-pink-500));
+    color: rgb(var(--color-cream));
+}
+
+.teal {
+    background-color: #fccddc;
+    color: rgb(var(--color-green-900));
+}
+
+.yellow {
+    background-color: #ffff94;
+    color: rgb(var(--color-green-900));
+}
+
+.cream {
+    background-color: #aefbff;
+    color: rgb(var(--color-green-900));
+}
+
+/* Inner content styling helpers */
+.iconBox {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid rgb(var(--color-green-900));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.iconBoxShadow {
+    box-shadow: 2px 2px 0 #03594D;
+}
+
+.iconBoxShadowSoft {
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}

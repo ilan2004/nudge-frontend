@@ -1,0 +1,58 @@
+@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Homemade+Apple&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cream: 249, 248, 244;
+  --color-mint-500: 130, 237, 166;
+  --color-green-900: 3, 89, 77;
+  --color-pink-500: 252, 86, 129;
+  --color-teal-300: 137, 169, 161;
+
+  --surface: rgb(var(--color-cream));
+  --bg-default: rgb(var(--color-mint-500));
+  --text-primary: rgb(var(--color-green-900));
+  --text-secondary: rgb(var(--color-teal-300));
+  --border-color: rgb(var(--color-green-900));
+  --accent: rgb(var(--color-pink-500));
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--bg-default);
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tanker', sans-serif;
+  text-transform: uppercase;
+}
+
+.font-accent {
+  font-family: 'Homemade Apple', cursive;
+}
+
+@layer components {
+
+  /* Retro Button Style */
+  .retro-btn {
+    background-color: rgb(var(--color-cream));
+    border: 2px solid rgb(var(--color-green-900));
+    box-shadow: 2px 2px 0 rgb(var(--color-green-900));
+    color: rgb(var(--color-green-900));
+    transition: all 0.2s ease-out;
+  }
+
+  .retro-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+}

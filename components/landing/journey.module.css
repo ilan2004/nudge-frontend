@@ -1,0 +1,88 @@
+.mainContainer {
+    background-color: rgb(var(--color-cream));
+    border: 2px solid rgb(var(--color-green-900));
+    border-radius: 2rem;
+    box-shadow: 8px 8px 0 #03594D;
+    padding: 3rem 2rem;
+    max-width: 80rem;
+    margin: 100px auto;
+}
+
+@media (min-width: 768px) {
+    .mainContainer {
+        padding: 4rem;
+    }
+}
+
+.stepCard {
+    border: 2px solid rgb(var(--color-green-900));
+    border-radius: 1rem;
+    box-shadow: 4px 4px 0 #03594D;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.stepCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #03594D;
+}
+
+.iconCircle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid rgb(var(--color-green-900));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+    box-shadow: 3px 3px 0 #03594D;
+}
+
+/* Step colors */
+.step1 {
+    background-color: #fccddc;
+    /* Light pink */
+    color: rgb(var(--color-green-900));
+}
+
+.step1 .iconCircle {
+    background-color: rgb(var(--color-green-900));
+    color: #fccddc;
+}
+
+.step2 {
+    background-color: #ffff94;
+    /* Light yellow */
+    color: rgb(var(--color-green-900));
+}
+
+.step2 .iconCircle {
+    background-color: rgb(var(--color-green-900));
+    color: #ffff94;
+}
+
+.step3 {
+    background-color: #aefbff;
+    /* Light cyan */
+    color: rgb(var(--color-green-900));
+}
+
+.step3 .iconCircle {
+    background-color: rgb(var(--color-green-900));
+    color: #aefbff;
+}
+
+.step4 {
+    background-color: rgb(var(--color-pink-500));
+    /* Vibrant pink */
+    color: rgb(var(--color-cream));
+}
+
+.step4 .iconCircle {
+    background-color: rgb(var(--color-cream));
+    color: rgb(var(--color-pink-500));
+}
