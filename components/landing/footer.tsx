@@ -43,9 +43,9 @@ export function Footer() {
                             </a>
                         </div>
                         <div className={styles.linksList}>
-                            <a href="#" className={styles.footerLink}>Privacy Policy</a>
-                            <a href="#" className={styles.footerLink}>Terms of Service</a>
-                            <a href="#" className={styles.footerLink}>Contact Us</a>
+                            <a href="/privacy" className={styles.footerLink}>Privacy Policy</a>
+                            <a href="/terms" className={styles.footerLink}>Terms of Service</a>
+                            <a href="mailto:hello@nudge.app" className={styles.footerLink}>Contact Us</a>
                         </div>
                     </div>
                 </div>
